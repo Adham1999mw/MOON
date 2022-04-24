@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,100&display=swap');
+body {
+    background-image: url("../assets/home/background-home-desktop.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    margin-top: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    z-index: 5000;
+
+}
+.navparent ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+.navparent ul li {
+    
+    font-size: 20px;
+    position: relative;
+    font-family: 'Barlow Condensed', sans-serif;
+
+}
+.line::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    top: 58px;
+    background-color: white;
+    display: none;
+}
+.lineplus::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    top: 58px;
+    background-color: white;
+    display: block;
+}
+
+.navparent ul li::after{
+    transition: .3s;
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: rgb(136, 136, 136);
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    left: 0px;
+    top: 58px;
+    z-index: -1;
+
+}
+.navparent ul li:hover:after{
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    /* padding: 10px; */
+    /* height: 70px; */
+
+}
+
+.navparent {
+
+    background-color: rgba(255, 255, 255, 0.04);
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    backdrop-filter: blur(81.5485px);
+    padding: 20px;
+    position: relative;
+
+}
+.navparent::before{
+    position: absolute;
+    content: "";
+    width: 480px;
+    height: 1px;
+    left: -440px;
+    /* top: 50px; */
+    z-index: 5;
+    background-color: rgba(255, 255, 255, 0.432);
+    backdrop-filter: blur(81.5485px);
+}
+.navparent::after {
+    position: absolute;
+    content: "";
+    width: 350px;
+    height: 96px;
+    background-color: rgba(255, 255, 255, 0.153);
+    backdrop-filter: blur(81.5485px);
+    right:0px;
+    z-index: -1;
+}
+.logo {
+    background-color: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    background-image: url("../assets/shared/logo.svg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+
+p {
+    font-size: 25px;
+    line-height: 34px;
+}

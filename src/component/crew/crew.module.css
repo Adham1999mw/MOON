@@ -1,0 +1,26 @@
+.all {
+        padding-top: 150px;
+        background-image: url("../assets/crew/background-crew-desktop.jpg");
+        background-size: cover;
+        width: 98.8vw;
+        top: 0;
+        position: absolute;
+        z-index: -1;
+        background-attachment: fixed;
+}
+
+.text {
+    margin-left: 100px;
+    color: white;
+    width: 400px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 25px;
+    letter-spacing: 4.5px;
+
+}
+.sp span {
+    font-size: 25px;
+    opacity: 0.25;;
+    display: inline-block;
+}
+

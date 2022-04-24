@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,100&display=swap');
+.homeall {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 200px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.hometext {
+    width: 460px;
+    color: white;
+
+
+}
+
+span {
+    margin: 40px 0px;
+    font-size: 80px;
+    display: block;
+    font-weight: bold;
+
+
+}
+
+.exp {
+    width: 274px;
+    height: 274px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 22px;
+    font-family: 'Barlow Condensed', sans-serif;
+    animation-name: rot;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    border: 1px solid black;
+}
+
+@keyframes rot {
+    to {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+}
+}
+.exp::after{
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    transition: .2s;
+
+
+}
+.exp:hover::after{
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.195) ;
+}
+p {
+    font-size: 25px;
+    line-height: 34px;
+}

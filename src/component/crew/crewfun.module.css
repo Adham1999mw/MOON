@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,100&family=Bellefair&display=swap');
+
+
+.www {
+    position: relative;
+}
+.allcir {
+    display: flex;
+    flex-direction: row;
+    position: absolute ;
+    bottom: 220px;
+    left: 220px;
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: white;
+    margin-left: 20px;
+    cursor: pointer;
+    padding: 1px;
+    opacity: .5;
+    transition:.2s ;
+    -webkit-transition:.2s ;
+    -moz-transition:.2s ;
+    -ms-transition:.2s ;
+    -o-transition:.2s ;
+}
+.circleplus {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: white;    
+    margin-left: 20px;
+    cursor: pointer;
+    padding: 1px;
+    
+}
+.circle:hover{
+    opacity: .8;
+}
+
+.allcrew {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.role {
+
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+.role h2 {
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #464751;
+    width: 318px;
+    font-family: 'Bellefair', serif;
+}
+.role h1 {
+    font-size: 55px;
+    color: #FFFFFF;
+    font-family: 'Bellefair';
+    font-weight: normal;
+    text-transform: uppercase;
+    user-select: text;
+    width: 611px;
+    margin: -25px 0px 15px 0px;
+}
+.role p {
+    font-size: 18px;
+    line-height: 32px;
+    color: #D0D6F9;
+    font-family: Barlow;
+    width: 450px;
+}

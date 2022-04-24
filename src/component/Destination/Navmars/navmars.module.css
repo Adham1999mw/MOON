@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,100&family=Bellefair&display=swap');
+
+#earths {
+    position: absolute;
+    right: 240px;
+    top: 270px;
+    height: 0px;
+    font-family: 'Barlow Condensed', sans-serif;
+
+
+}
+#earths ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 20px;
+}
+#earths ul li {
+    color: white;
+    cursor: pointer;
+    position: relative;
+    font-size: 20px;
+}
+/* #earths ul li::before{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    display: none;
+
+} */
+
+.line::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    display: none;
+}
+.lineplus::before{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    display: block;
+}
+
+
+#earths ul li::after{
+    position: absolute;
+    content: "";
+    left: 0px;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    bottom: -10px;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+}
+#earths ul li:hover::after{
+    width: 100%;
+}
+
+
+
+.phoinfo {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Barlow Condensed', sans-serif;
+
+}
+
+/* .pho {
+    width: 200px;
+    height: 500px;
+    background-color: aquamarine;
+} */
+
+.info {
+    width: 500px;
+    color: white;
+
+}
+.info div h1 {
+    line-height: 80px;
+    font-size: 120px;
+    font-family: 'Bellefair', serif;
+    text-align: center;
+    letter-spacing: 4px;
+    
+
+    
+}
+.pp{
+    font-size: 20px;
+    width: 450px;
+    font-family: 'Barlow Condensed', sans-serif;
+
+}
+
+.dt {
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    position: relative;
+
+}
+
+.dt::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color:  #383B4B;
+    left: 0%;
+    top: 0px;
+}
